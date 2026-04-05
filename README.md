@@ -1,7 +1,7 @@
-# India-air-quality-Intelligenc
 # India Air Quality Intelligence System
 
-Real-time AQI monitoring and intelligence system for 15+ Indian cities.
+## Live Dashboard
+[Click here to view live dashboard](https://india-air-quality-intelligence-6aeqhy5zvtquu4opwf4gyh.streamlit.app/)
 
 ## What it does
 - Fetches live AQI data from WAQI Government API
