@@ -104,8 +104,8 @@ if "scored_df" in st.session_state:
             return "background-color: #FF0000; color: white"
 
     styled = filtered_df.style\
-        .applymap(color_grade, subset=["Grade"])\
-        .applymap(color_aqi, subset=["AQI"])
+    .map(color_grade, subset=["Grade"])\
+    .map(color_aqi, subset=["AQI"])
 
     st.dataframe(styled, use_container_width=True, hide_index=True)
 
