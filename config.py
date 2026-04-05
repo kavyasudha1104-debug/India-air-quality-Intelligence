@@ -1,9 +1,12 @@
 import os
-from dotenv import load_dotenv
+try:
+    import streamlit as st
+    API_KEY = st.secrets["API_KEY"]
+except:
+    from dotenv import load_dotenv
+    load_dotenv()
+    API_KEY = os.getenv("API_KEY")
 
-load_dotenv()
-
-API_KEY = "b52a7bf22a1f2aa6956366f98b1c0b4e7dc2e0d1"
 BASE_URL = "https://api.waqi.info/feed"
 
 CITIES = [
