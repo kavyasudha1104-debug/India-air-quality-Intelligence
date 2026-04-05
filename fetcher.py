@@ -51,6 +51,9 @@ def fetch_all_cities():
 
 def save_raw_data(df):
     """Save fetched data to CSV"""
+    import os
+    os.makedirs("data", exist_ok=True)
+    os.makedirs("reports", exist_ok=True)
     date_str = datetime.now().strftime("%Y-%m-%d")
     filename = f"data/raw_aqi_{date_str}.csv"
     df.to_csv(filename, index=False)
