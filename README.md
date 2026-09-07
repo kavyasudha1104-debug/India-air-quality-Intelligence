@@ -37,7 +37,7 @@ Excel Report + Streamlit Dashboard
 
 ## City Health Score
 
-The project converts AQI into a simple 0–100 health score, where **lower AQI results in a higher score**.
+The project converts AQI into a simple **0–100 health score**, where lower AQI results in a higher score.
 
 |     AQI | Health Score | Grade |
 | ------: | -----------: | :---: |
@@ -48,7 +48,7 @@ The project converts AQI into a simple 0–100 health score, where **lower AQI r
 | 201–300 |           20 |   F   |
 |    300+ |            0 |   F   |
 
-This creates an easier way to compare cities beyond looking at raw AQI values alone.
+This provides an easier way to compare cities beyond raw AQI values.
 
 ## Alert System
 
@@ -58,7 +58,7 @@ The system automatically generates alerts based on air quality conditions:
 * 🟠 **Warning:** AQI above 150
 * 🟢 **Good:** AQI below 50
 
-This turns the project from a static analysis into a simple **monitoring and decision-support system**.
+This turns the project into a simple **monitoring and decision-support system** rather than a static analysis.
 
 ## Project Structure
 
@@ -99,7 +99,7 @@ Cities crossing unhealthy or critical AQI thresholds are automatically flagged.
 
 ### 6. Reporting
 
-The processed results, trends, scores, and alerts are exported into an Excel report for further analysis or sharing.
+Processed results, trends, scores, and alerts are exported into an Excel report for further analysis or sharing.
 
 ### 7. Interactive Dashboard
 
@@ -138,9 +138,3 @@ The project is designed to work with live API data rather than relying on a stat
 * Excel report automation
 * Interactive dashboard development
 * Turning raw data into actionable information
-
-## Why This Project Matters
-
-Air quality data is useful only when it can be translated into something people can understand and act on.
-
-This project moves from **raw API data → structured analysis → interpretable scores → alerts → reporting → dashboard**, demonstrating how a data pipeline can support real-world monitoring and decision-making.
